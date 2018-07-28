@@ -3,12 +3,6 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "aB+ZDcX9agmLOO+/dKINbhbCbsg=",
-			"path": "github.com/sirupsen/logrus",
-			"revision": "c108f5553c369120b773da633aca62a8b42b1cf4",
-			"revisionTime": "2018-07-23T11:49:25Z"
-		},
-		{
 			"checksumSHA1": "9/2qvuFPQxW7ZXzQSOYwqZb5cNg=",
 			"path": "github.com/urfave/cli",
 			"revision": "8e01ec4cd3e2d84ab2fe90d8210528ffbb06d8ff",
