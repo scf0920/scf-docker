@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-var runCommand = cli.Command{
+var RunCommand = cli.Command{
 	Name: "run",
 	Usage: "Like docker client. Create a container",
 	Flags: []cli.Flag{

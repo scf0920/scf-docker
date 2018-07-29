@@ -4,6 +4,7 @@ import (
 	"github.com/urfave/cli"
 	"github.com/scf0920/scf-docker/command"
 	"log"
+	"os"
 )
 
 func main(){
@@ -11,8 +12,8 @@ func main(){
 	app.Name = "scf-docker"
 	app.Usage = "This is a simple container"
 	app.Commands = []cli.Command{
-		command.initCommand,
-		command.runCommand,
+		command.InitCommand,
+		command.RunCommand,
 	}
 	app.Before = func(c *cli.Context) error {
 		log.SetOutput(os.Stdout)
