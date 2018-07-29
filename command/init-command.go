@@ -12,7 +12,7 @@ var InitCommand = cli.Command{
 	Action: func(c *cli.Context) error {
 		commands := c.Args().Get(0)
 		log.Println(commands)
-        err =  container.RunContainerInitProcess(commands, nil)
-		return nil
+        err := container.RunContainerInitProcess(commands, nil)
+		return err
 	},
 }
