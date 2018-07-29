@@ -25,6 +25,7 @@ var RunCommand = cli.Command{
 		tty := c.Bool("it") || c.Bool("ti")
 		commands := c.Args().Get(0)
 		args := []string{"init", commands}
+		syscall.Mount("proc", "/proc", "proc", 0, "")
 		cmd := exec.Command("/proc/self/exe", args...)
         cmd.SysProcAttr = &syscall.SysProcAttr{
         	Cloneflags: syscall.CLONE_NEWUTS | syscall.CLONE_NEWPID | syscall.CLONE_NEWNS |
