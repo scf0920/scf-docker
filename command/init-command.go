@@ -3,6 +3,7 @@ package command
 import (
 	"github.com/urfave/cli"
 	"log"
+	"github.com/scf0920/scf-docker/container"
 )
 
 var InitCommand = cli.Command{
@@ -11,6 +12,7 @@ var InitCommand = cli.Command{
 	Action: func(c *cli.Context) error {
 		commands := c.Args().Get(0)
 		log.Println(commands)
+        err =  container.RunContainerInitProcess(commands, nil)
 		return nil
 	},
 }
